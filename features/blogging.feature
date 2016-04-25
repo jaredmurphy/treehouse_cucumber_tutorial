@@ -4,7 +4,7 @@ Feature: Blogging
     I want people to be able to create a blog post
 
     Scenario: Creating a blog post
-        Given I am a the home page
+        Given I am on the home page
         And I follow "New Post"
         When I fill in "Title" with "Hello World"
         And I fill in "Body" with "This is my first blog post!"

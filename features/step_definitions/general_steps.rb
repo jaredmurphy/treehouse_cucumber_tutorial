@@ -1,22 +1,17 @@
-Given(/^I am a the home page$/) do
-pending # Write code here that turns the phrase above into concrete actions
+Given(/^I follow "([^"]*)"$/) do |link_name|
+    click_link(link_name)
 end
 
-Given(/^I follow "([^"]*)"$/) do |arg1|
-pending # Write code here that turns the phrase above into concrete actions
+When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
+    fill_in(field, :with => value)
 end
 
-When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
+When(/^I press "([^"]*)"$/) do |button_name|
 pending # Write code here that turns the phrase above into concrete
 actions
 end
 
-When(/^I press "([^"]*)"$/) do |arg1|
-pending # Write code here that turns the phrase above into concrete
-actions
-end
-
-Then(/^I should see "([^"]*)"$/) do |arg1|
+Then(/^I should see "([^"]*)"$/) do |content|
 pending # Write code here that turns the phrase above into concrete
 actions
 end
