@@ -11,6 +11,5 @@ When(/^I press "([^"]*)"$/) do |button_name|
 end
 
 Then(/^I should see "([^"]*)"$/) do |content|
-pending # Write code here that turns the phrase above into concrete
-actions
+    expect(page).to have_content content
 end
