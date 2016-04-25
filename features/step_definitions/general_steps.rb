@@ -7,8 +7,7 @@ When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
 end
 
 When(/^I press "([^"]*)"$/) do |button_name|
-pending # Write code here that turns the phrase above into concrete
-actions
+   click_button button_name 
 end
 
 Then(/^I should see "([^"]*)"$/) do |content|
