@@ -12,16 +12,18 @@ Feature: Blogging
         Then I should see "Hello World!"
         And I should see "This is my first blog post!"
 
+    @wip
     Scenario: Creating an invalid blog
         Given I am on the home page
         And I follow "New Post"
         When I fill in "Body" with "This is my first post"
         And I press "Publish"
+        And show me the page
         Then I should see "can't be blank"
         When I fill in "Title" with "Hello World"
         And I fill in "Body" with ""
         And I press "Publish"
-        Then I shouls see "can't be blank"
+        Then I should see "can't be blank"
         And I fill in "Body" with "This is my first post"
         And I press "Publish"
         Then I should see "Hello World"
