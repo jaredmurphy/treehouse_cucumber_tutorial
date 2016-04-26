@@ -1,2 +1,4 @@
-Hello
-
+<h1> Welcome </h1>
+<% for post in @posts %>
+    <h1><%= link_to post.title, post %></h1>
+<% end %>
