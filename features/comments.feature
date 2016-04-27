@@ -22,7 +22,7 @@ Scenario: Creating a comment
     And I follow "My First Post"
     Then I should not see "Comment by: Andrew"
     And I should not see "My Awesome comment"
-@wip
+
 Scenario: Creating an invalid comment
     When I fill in "Name" with ""
     And I fill in "Body" with "My Awesome comment"
