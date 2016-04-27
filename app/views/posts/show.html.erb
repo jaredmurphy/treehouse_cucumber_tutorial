@@ -1,2 +1,16 @@
 <h1><%=@post.title%></h1>
 <p><%=@post.body%></h1>
+
+<% for comment in @post.comments %>
+    <%= div_for(comment) do %>
+        <h2> Comment by: <%=comment.name %> </h2>
+        <%= simple_format comment.body %>
+    <% end %>
+<% end %>
+
+<%= simple_form_for([@post, @comment]) do |f| %>
+    <h3> Add a comment </h3>
+    <%= f.input :name %>
+    <%= f.input :body %>
+    <%= f.button :submit, "Submit Comment" %>
+<% end %>

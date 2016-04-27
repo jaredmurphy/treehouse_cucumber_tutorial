@@ -28,7 +28,6 @@ Feature: Blogging
         Then I should see "Hello World"
         And I should see "This is my first post"
 
-    @wip
     Scenario: Listing Articles
         Given I have the following posts:
             |title|body|

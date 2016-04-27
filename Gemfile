@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'rspec'
 gem 'launchy'
+gem 'better_errors'
 # Use ActiveModel has_secure_password
 
 # gem 'bcrypt', '~> 3.1.7'
